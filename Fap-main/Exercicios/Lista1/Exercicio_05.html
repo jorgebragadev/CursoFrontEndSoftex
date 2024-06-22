@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<script>
+function funcao1()
+{
+    
+
+    var kminicial = parseInt(prompt('Informe a quilometragem inicial:'));
+    var kmfinal = parseInt(prompt('Informe a quilometragem final:'));
+    var ltconsumido = parseFloat(prompt('Informe quantos litros foram consumidos de combustível:'));
+    var valorltcombustivel = parseFloat(prompt('Informe o preço do litro de combustível:'));
+
+    var distancia = kmfinal - kminicial; 
+    var gastototal = ltconsumido * valorltcombustivel;
+    var mediaconsumo = distancia / ltconsumido;
+
+    alert('A distância percorrida foi ' + distancia +  ' km'
+    + '\nO consumo do carro foi ' + ltconsumido + ' litros'
+    + '\nO valor total gasto foi R$ ' + gastototal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+    + '\nO consumo do carro por litro foi ' + mediaconsumo + ' km/litro');
+
+
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="funcao1()" value="Executar Código" />
+
+</body>
+</html></div>

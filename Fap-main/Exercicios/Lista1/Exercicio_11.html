@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<script>
+function funcao1()
+{
+    
+
+
+
+    var anoNasc = parseInt(prompt('Informe o ano de nascimento:'));
+    var anoAtual = (new Date()).getFullYear();
+    var idade = anoAtual - anoNasc;
+
+    if (idade > 16) {
+    alert('Você esta apto a votar nesta eleição: ' + idade);
+} else {
+    alert('Você não tem idade para votar nesta eleição: ' + idade);
+}
+
+    
+    
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="funcao1()" value="Executar Código" />
+
+</body>
+</html></div>
