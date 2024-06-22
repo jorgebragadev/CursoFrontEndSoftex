@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<script>
+function funcao1()
+{
+    
+
+    var salario = parseFloat(prompt('Informe o salário do funcionário:'));
+    var aumento = 0;
+    var novoSalario = 0;
+    var percentual = 0;
+    
+    if (salario <= 280) {
+        percentual = 20;
+        aumento = (salario * percentual / 100);
+        novoSalario = aumento + salario;
+} else if (salario > 280 && salario < 700) {
+        percentual = 15;
+        aumento = (salario * percentual / 100);
+        novoSalario = aumento + salario;
+} else if (salario >= 700 && salario < 1500) {
+        percentual = 10;
+        aumento = (salario * percentual / 100);
+        novoSalario = aumento + salario;
+} else {
+        percentual = 5;
+        aumento = (salario * percentual / 100);
+        novoSalario = aumento + salario;
+}
+
+alert('O percentual de aumento aplicado ' + percentual + '%' 
++ '\nO valor do aumento R$ ' + aumento.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) 
++ '\nO novo salário, após o aumento R$ ' + novoSalario.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="funcao1()" value="Executar Código" />
+
+</body>
+</html></div>

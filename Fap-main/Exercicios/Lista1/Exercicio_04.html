@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<script>
+function funcao1()
+{
+    
+
+    var nome = prompt('Informe o Nome do Funcionário :');
+    var salario = parseFloat(prompt('Informe o salário:'));
+    var percentual = parseFloat(prompt('Informe o percentual:'));
+    var nsalario = salario +(salario * percentual/100);
+
+    alert('O novo salário do funcionário ' + nome + ' é R$ ' + nsalario.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+
+
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="funcao1()" value="Executar Código" />
+
+</body>
+</html></div>

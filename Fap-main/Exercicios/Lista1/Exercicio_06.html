@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<script>
+function funcao1()
+{
+    
+    var nomeUsuario = prompt('Informe o nome do usuário :');
+    var idadeUsuario = parseInt(prompt('Informe a idade do usuário: '));
+    var maeUsuario = prompt('Informe o nome da mãe do usuário: ');
+    var idadeMae = parseInt(prompt('Informe a idade da mãe do usuário: '));
+    var paiUsuario = prompt('Informe o nome do pai do usuário: ');
+    var idadePai = parseInt(prompt('Informe a idade do pai do usuário: '));
+    var idadeMaeNasc = (idadeMae - idadeUsuario);
+    var idadePaiNasc = (idadePai - idadeUsuario);
+    
+
+    alert(nomeUsuario + ', quando você nasceu, ' 
+    + maeUsuario + ' tinha ' + idadeMaeNasc + ' e Seu ' 
+    + paiUsuario + ' tinha ' +idadePaiNasc + ' anos');
+
+
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="funcao1()" value="Executar Código" />
+
+</body>
+</html></div>
