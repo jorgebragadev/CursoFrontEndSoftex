@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tutorial de Alert em JavaScript - Linha de Código</title>
-<script>
-function funcao1()
-{
-    
+    <title>Tutorial de Alert em JavaScript - Linha de Código</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+    function funcao1() {
+        var nota1 = parseFloat(prompt('Informe a nota 01:'));
+        var nota2 = parseFloat(prompt('Informe a nota 02:'));
+        var nota3 = parseFloat(prompt('Informe a nota 03:'));
+        var media = (nota1 + nota2 + nota3) / 3;
 
-    var nota1 = parseFloat(prompt('Informe a nota 01:'));
-    var nota2 = parseFloat(prompt('Informe a nota 02:'));
-    var nota3 = parseFloat(prompt('Informe a nota 03  :'));
-    var media = (nota1 + nota2 + nota3)/3;
+        alert('A média do aluno é: ' + media.toFixed(2));
+    }
 
-    alert('A média do aluno é: ' + media.toFixed(2));
-
-}
-</script>
+    function retornarIndex() {
+        window.location.href = 'index.html';
+    }
+    </script>
 </head>
 <body>
 
+<h1>Exercício 01</h1>
+
 <input type="button" onclick="funcao1()" value="Executar Código" />
+<input type="button" onclick="retornarIndex()" value="Retornar ao Índice" />
 
 </body>
-</html></div>
+</html>
