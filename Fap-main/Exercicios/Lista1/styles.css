@@ -6,6 +6,7 @@ body {
 
 h1 {
     color: #333;
+    text-align: center; /* Centraliza o título */
 }
 
 ol {
@@ -18,7 +19,7 @@ li {
     text-align: left;
 }
 
-button {
+button, input[type="button"] {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -33,25 +34,27 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+button:hover, input[type="button"]:hover {
     background-color: #45a049;
 }
 
-input[type="button"] {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+.exercises-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-input[type="button"]:hover {
-    background-color: #45a049;
+.exercise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.exercise .question {
+    flex: 1;
+    margin-right: 10px;
+    text-align: left; /* Alinha o texto da pergunta à esquerda */
 }
